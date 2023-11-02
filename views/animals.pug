@@ -18,13 +18,14 @@ block content
           p Animal Type: #{animals.animal_type}
           p Color: #{animals.color}
           p Legs: #{animals.legs}
-          //- a(href="#" onclick=`buy(${index}); return false;`) Buy Animal #{index}
+          a(href="#" onclick=`buy(${index}); return false;`) Buy Animal #{index}
 
   a(href="/animals") Go Back
 
-  //- script.
-  //-   function buy(index) {
-  //-     alert(`You purchased animal ${index}`);
-  //-   }
+
+  script.
+    function buy(index) {
+      alert(`You purchased animal ${index}`);
+    }
 
 
